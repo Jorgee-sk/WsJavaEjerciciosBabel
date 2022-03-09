@@ -1,0 +1,89 @@
+.headerPags{
+    background-color:rgb(255, 187, 40);
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+
+.headerLinked{
+    color: rgb(255, 187, 40);
+    background-color:black;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+
+.imageFull{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.divTable{
+    width:100%; 
+    background-color: rgb(255, 187, 40); 
+    left: 0%;
+}
+
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:  rgb(0, 0, 0);
+    color: pink;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.footerContainer{
+    width: 100%;
+
+}
+
+.divLink{
+   text-align:center; 
+   margin-top: 7%;
+}
+
+.tableImgStyle{
+    width: 75px; 
+    height: 75px;
+}
+
+.imgAdapt{
+    background-color: black;
+    padding: 0%;
+    width: 1290px; 
+    height: 800px;
+    border: 10px solid;
+    border-color: black;
+}
+
+.styleOpinion{
+    resize: none; 
+    margin-bottom: 10px;
+}
+
+.headerUpper{
+    text-transform: uppercase;
+}
+
+.headerUpperCenter{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a:hover, a:focus{
+    color:rgb(109, 65, 212);
+}
