@@ -1,0 +1,40 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.headerPags{
+	background-color: #222;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+
+.headerColor{
+	color: #E5E5E5;
+}
+
+.text-upper{
+	text-transform: uppercase;
+}
+
+.container1{
+	background-color: red;
+	padding-top: 6em; 
+	padding-bottom: 3em;
+	text-align: center;
+}
+.container2{
+	background-color: #ff00ff;
+	padding-top: 6em; 
+	padding-bottom: 3em;
+	text-align: center;
+}
+.container3{
+	background-color: aquamarine;
+	padding-top: 6em; 
+	padding-bottom: 3em;
+	text-align: center;
+}
