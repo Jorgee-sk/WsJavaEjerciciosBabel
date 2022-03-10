@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,34 +27,37 @@ public class LoginServlet extends HttpServlet {
 		user.setUsername(username);
 		user.setPassword(password);
 
-		Usuario[] listaUsuarios = new Usuario[3];
-		listaUsuarios[0].setUsername("Usuario");
-		listaUsuarios[0].setPassword("contraseñaSuperSecreta");
-		listaUsuarios[1].setUsername("Usuario2");
-		listaUsuarios[1].setPassword("1234");
-		listaUsuarios[2].setUsername("xX_Usuario3_Xx");
-		listaUsuarios[2].setPassword("fechademicumple");
-
-		for (int i = 0; i < listaUsuarios.length; i++) {
-			if (user.getUsername() == listaUsuarios[i].getUsername()
-					&& user.getPassword() == listaUsuarios[i].getPassword()) {
-				RequestDispatcher rd = request.getRequestDispatcher("JspLoginSucces.jsp");
-				request.setAttribute("user", user);
-				request.setAttribute("mSucces", mSucces);
-				request.setAttribute("mNSucces", mNotSucces);
-				rd.forward(request, response);
-			}
-
-			if (user.getUsername() != listaUsuarios[i].getUsername()
-					|| user.getPassword() != listaUsuarios[i].getPassword()) {
-				RequestDispatcher rd = request.getRequestDispatcher("JspLoginSucces.jsp");
-				request.setAttribute("user", user);
-				request.setAttribute("mSucces", mSucces);
-				request.setAttribute("mNSucces", mNotSucces);
-				rd.forward(request, response);
-			}
-
+		Usuario user1 = new Usuario("Usuario","superSecreto");
+		Usuario user2 = new Usuario("Usuario2","1234");
+		Usuario user3 = new Usuario("xX_Usuario3_Xx","fechademicumple");
+		
+		ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
+		listaUsuarios.add(user1);
+		listaUsuarios.add(user2);
+		listaUsuarios.add(user3);
+		
+		System.out.println(user.getUsername());
+		
+		for(int i=0;i<3;i++) {
+			if (user.getUsername().equals(listaUsuarios.get(i).getUsername()) &&
+				user.getPassword().equals(listaUsuarios.get(i).getPassword())) 
+				{
+					RequestDispatcher rd = request.getRequestDispatcher("JspLoginSucces.jsp");
+					request.setAttribute("user", user);
+					request.setAttribute("mSucces", mSucces);
+					request.setAttribute("mNSucces", mNotSucces);
+					rd.forward(request, response);
+				}else{
+					if(i==3) {
+						RequestDispatcher rd = request.getRequestDispatcher("JspLoginNotSucces.jsp");
+						request.setAttribute("user", user);
+						request.setAttribute("mSucces", mSucces);
+						request.setAttribute("mNSucces", mNotSucces);
+						rd.forward(request, response);
+					}
+				}
 		}
+			
 
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}

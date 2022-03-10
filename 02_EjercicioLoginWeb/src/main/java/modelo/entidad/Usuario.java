@@ -10,6 +10,11 @@ public class Usuario {
 		super();
 	}
 	
+	public Usuario(String string, String string2) {
+		username = string;
+		password = string2;
+	}
+
 	public String getUsername() {
 		return username;
 	}
