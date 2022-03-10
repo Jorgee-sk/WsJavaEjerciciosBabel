@@ -50,6 +50,7 @@ public class LoginServlet extends HttpServlet {
 				rd.forward(request, response);
 			}
 		}
+		
 		//En cualquier otro caso vamos a saber que no ha sido successfull!
 		RequestDispatcher rd = request.getRequestDispatcher("JspLoginNotSucces.jsp");
 		request.setAttribute("user", user);

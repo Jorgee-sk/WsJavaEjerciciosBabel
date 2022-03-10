@@ -14,9 +14,9 @@
 	Accedemos directamente a los atributos mediante
 	${claveAtributo}
 	-->
-	<h2>${user.username}</h2>
-	<h2>${user.password}</h2>
-	<h2>${mSucces}</h2>
+	<h2 style="text-align:center;">${user.username}</h2>
+	<h2 style="text-align:center;">${user.password}</h2>
+	<h2 style="text-align:center;">${mSucces}</h2>
 	<hr/>
 </body>
 </html>
