@@ -18,5 +18,6 @@
 	<h2 style="text-align:center;">${user.password}</h2>
 	<h2 style="text-align:center;">${mNSucces}</h2>
 	<hr/>
+	<a href="formularioLogin.html" style="display:block; text-align: center">Vuelva a loguearse</a>
 </body>
 </html>

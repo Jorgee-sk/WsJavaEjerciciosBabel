@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String mSucces = "LOGIN SUCCESSFULLY!";
-		String mNotSucces = "USERNAME OR PASSWORD IS INCORRECT ENSURE U ARE ENTER VALID VALUES";
+		String mNotSucces = "USERNAME OR PASSWORD IS INCORRECT ENSURE U ARE ENTERING VALID VALUES";
 
 		Usuario user = new Usuario();
 		user.setUsername(username);
