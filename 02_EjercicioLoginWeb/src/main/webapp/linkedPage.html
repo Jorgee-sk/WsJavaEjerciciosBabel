@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTICIAS GYM CLUB</title>
+    <link href="css/linkedPage.css" rel="stylesheet" type="text/css"> 
+</head>
+<body style="background-color: rgb(255, 187, 40);">
+
+    <main>
+
+        <header class="headerLinked">
+            <h1 class="headerUpper">Últimas noticias en the gym club</h1>
+        </header>
+        
+        <div class="divLink">
+            <nav >
+                <a href="mainPage.html" >Volver a página de inicio</a>
+            </nav>
+        </div>
+        
+        <div>
+            <section >
+                <h2 class="headerUpperCenter">NOTICIAS THE GYM CLUB</h2>
+                <article class="text-center">
+                    <h3 class="headerUpper">Llega un nuevo monitor especializado en boxeo!</h3>
+                    <p>Desde el pasado jueves nuestro gimnasio contará
+                        con un nuevo <br> monitor para dar clases de boxeo, tanto
+                        fitboxing como boxeo real.
+                    </p>
+                    <p>
+                        Desde hoy ya puedes reservar eligiendo fecha en el siguiente calendario:
+                    </p>
+                    <form style="margin-bottom: 3%;">
+                        <input type="date" name="fechaReserva" placeholder="Introduzca fecha de reserva"/>
+                    </form>
+                    
+                    <img class="imgAdapt" id="fotoBoxing" src="img/clasesBoxeo.jpg" />
+                   
+                </article>
+                <article class="text-center">
+                    <h3 class="headerUpper">Elabora una dieta junto a nuestro reconocido nutricionista!</h3>
+                    <label for="genero"><b>Seleccione su género:</b> </label>
+                    <br/>
+                    <br />	
+                    <input type="radio" name="genero" value="H" />Hombre	
+                    <input type="radio" name="genero" value="M" />Mujer	
+                    <input type="radio" name="genero" value="O" />Otr@
+                    <input type="radio" name="genero" value="P" />Prefiero no decirlo	
+                    <br/>
+                    <br/>
+                    <label for="edadR"><b>Indique su rango de edad:</b></label>
+                    <br />
+                    <br />
+                    <input type="checkbox" name="edadR" value="S" />>16años
+                    <input type="checkbox" name="edadR" value="M" />18-30 años	
+                    <input type="checkbox" name="edadR" value="I" />30-60 años	
+                    <input type="checkbox" name="edadR" value="V" />>60años
+                    <br/>
+                    <br/>
+                    <label for="actividadFisica"><b>Indique su nivel de actividad física:</b></label>
+                    <br />	
+                    <br />
+                    <select name="actividadFisica">
+                        <option value="ML">Muy leve</option>
+                        <option value="L">Leve</option>
+                        <option value="M" selected>Moderada</option>
+                        <option value="INT">Intensa</option>
+                        <option value="EXC">Excepcional</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <label for="actividadFisica"><b>Indique su email donde se le facilitará una dieta:</b></label>
+                    <br />	
+                    <br />
+                    <input id="email" type="email" name="email"/>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar datos" />
+                    <br>
+                    <br>
+                    <img class="imgAdapt" id="fotoDietista" src="img/dietista.jpg" />
+                    <br>
+                    <br>
+                    
+                </article>
+            </section>
+        </div>
+        
+        <div style="margin-left: 8%;">
+            <label class="headerUpper" for="opinión">Dejanos tu opinión del gimnasio!</label>
+            <br />	
+            <textarea class="styleOpinion" rows="5" cols="171" name="observaciones" ></textarea>    
+        </div>
+    
+    
+        <footer class="footer text-center">
+            <div class="footerContainer">
+                    <div>
+                        <p>THE GYM CLUB copyright 2021 &copy;</p>
+                    </div>
+            </div>
+        </footer>
+
+    </main>
+    
+
+    
+</body>
+</html>
