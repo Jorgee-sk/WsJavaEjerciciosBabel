@@ -4,20 +4,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<link href="css/formLog.css" rel="stylesheet" type="text/css"><link>
+<title>Invalid form</title>
 </head>
 <body>
-	<h1 style="color: blue; text-align: center;">USUARIO O CONTRASEÑA INCORRECTOS</h1>
+	<div class="container1">
+		<form style="text-align: center;" action="formularioLogin.html" method="get">
+			<fieldset class="field-class2">
+				<img class="img-invalid" src="img/cruz.png" alt="...">
+				<h1 class="text-logIn-ns">FAILED TO LOG IN</h1>
+				<h2 class="text-logIn-ns">USERNAME "${user.username}" OR PASSWORD "${user.password}"</h2>
+				<h2 class="text-logIn-ns">${mNSucces}</h2>
+				<input class="submitButton-ns"type="submit" value="RETURN TO LOG IN PAGE"/>
+			</fieldset>
+		</form>
+	</div>
+
 	
-	<hr/>
-	<!-- MEJOR FORMA 
-	Accedemos directamente a los atributos mediante
-	${claveAtributo}
-	-->
-	<h2 style="text-align:center;">${user.username}</h2>
-	<h2 style="text-align:center;">${user.password}</h2>
-	<h2 style="text-align:center;">${mNSucces}</h2>
-	<hr/>
-	<a href="formularioLogin.html" style="display:block; text-align: center">Vuelva a loguearse</a>
 </body>
 </html>
