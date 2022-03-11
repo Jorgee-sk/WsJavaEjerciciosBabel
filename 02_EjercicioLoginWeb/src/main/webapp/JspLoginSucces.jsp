@@ -78,7 +78,7 @@
         <div style="padding-top: 1em; padding-bottom: 2em;" class="containerSection1 d-flex align-items-center flex-column">
             <h1 class="text-uppercase marginBottomAdapt"> últimas noticias</h1>
             
-             <a href="mainPage.html"><img class="img1" src="img/gym.jpeg" alt="..."></a>
+             <a href="mainPage.html"><img class="img1" src="img/gymm.jpg" alt="..."></a>
              
             <p style=" text-align:center; font-size: 20px" class="textP">
             Aqui encontrarás las últimas noticias
